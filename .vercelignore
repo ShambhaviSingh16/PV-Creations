@@ -1,0 +1,16 @@
+node_modules
+dist
+.git
+.qa
+.npm-cache
+.vscode
+.env
+.env.*
+scripts
+PV-Creations-Blueprint.md
+PV-Creations-Concept-Prompt.txt
+PV-Creations-Homepage-Concept.png
+README.md
+DEPLOYMENT.md
+public/images/*.png
+public/images/ASSET-NOTES.md
