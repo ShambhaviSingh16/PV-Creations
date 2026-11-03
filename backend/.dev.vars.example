@@ -1,0 +1,10 @@
+# Production secrets belong in `wrangler secret put`, never in VITE_* variables.
+ORDER_TOKEN_SECRET=replace-with-a-long-random-secret
+RAZORPAY_KEY_ID=
+RAZORPAY_KEY_SECRET=
+RAZORPAY_WEBHOOK_SECRET=
+ACCESS_ISSUER=https://your-team.cloudflareaccess.com
+ACCESS_AUD=
+OWNER_EMAILS=
+RESEND_API_KEY=
+EMAIL_FROM=

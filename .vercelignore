@@ -14,3 +14,8 @@ README.md
 DEPLOYMENT.md
 public/images/*.png
 public/images/ASSET-NOTES.md
+.local-data
+.wrangler
+backend
+tests
+OPERATIONS.md
