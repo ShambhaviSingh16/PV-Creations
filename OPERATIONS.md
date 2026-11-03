@@ -38,6 +38,8 @@ The public frontend remains on Vercel. Deploy backend/worker.js to Cloudflare Wo
 8. Open https://BACKEND-HOST/admin for the owner workspace. In this path the frontend uses the same backend origin so Access can inject and validate the identity token. Do not use Vercel's /#admin as the production owner dashboard. The backend API paths /api/store, /api/checkout, /api/orders/*, payment verification and webhooks remain available to customers/provider as appropriate, not behind the staff login gate. Alternate hosts still cannot obtain admin data without a valid application JWT and allowlisted owner identity.
 9. Add VITE_API_URL=https://BACKEND-HOST in Vercel and rebuild/redeploy the frontend. This is a public API origin, not a secret. Without this setting production stays in the existing preview behavior. A preview deployment can use a separate test backend/database; do not use production PII in previews.
 
+The storefront footer includes an Owner dashboard link. Locally it opens /#admin. In production it opens the configured API host's /admin page when VITE_API_URL is present. Set optional VITE_ADMIN_URL to the exact protected dashboard URL if it differs. Without either setting it opens /#admin, which shows the owner entry screen but does not provision a backend or production sign-in. The footer link grants no authorization; the API still requires a verified owner identity.
+
 Wrangler examples (run from project root; CLI installation and Cloudflare authorization required):
 
 ```powershell

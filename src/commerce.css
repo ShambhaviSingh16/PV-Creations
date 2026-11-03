@@ -2,3 +2,5 @@
 @media(max-width:600px){.admin-header{font-size:12px;flex-wrap:wrap}.admin-content{padding:30px 18px}.admin-content>h1{font-size:35px}.admin-products article{flex-wrap:wrap;gap:15px}.admin-products h3{font-size:21px}.admin-products img{width:65px;height:80px}.admin-products article>div{max-width:calc(100% - 85px)}.admin-editor{grid-template-columns:1fr;padding:18px}.admin-editor h2{font-size:28px}.admin-order{padding:18px}.order-lines li{font-size:13px;gap:14px}}
 
 .policy-copy{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;font-size:14px}.checkout-policies details{border-bottom:1px solid #ded3c5;padding:12px 0;font-size:14px}.checkout-policies summary{cursor:pointer;text-transform:capitalize}.checkout-policies p{padding:12px 0}
+
+.footer-admin-link{color:#765044;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}.footer-admin-link:hover{color:#a7475c}

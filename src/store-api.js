@@ -1,5 +1,6 @@
 import {productPhotos,MAX_SOURCE_PHOTO_BYTES,MAX_UPLOAD_PHOTO_BYTES} from './photos';
 export const API_URL=(!import.meta.env.DEV&&location.pathname==='/admin'?location.origin:import.meta.env.VITE_API_URL||(import.meta.env.DEV?'http://127.0.0.1:8787':'')).replace(/\/$/,'');
+export const ADMIN_DASHBOARD_URL=import.meta.env.VITE_ADMIN_URL||(!import.meta.env.DEV&&import.meta.env.VITE_API_URL?`${API_URL}/admin`:'/#admin');
 export async function api(path,{method='GET',body,token}={}){
  if(!API_URL)throw new Error('The store service is not connected yet.');
  if(body&&path.startsWith('/admin/products')){const images=productPhotos(body).map(canonicalPhoto);body={...body,images,image:images[0]||''};}
